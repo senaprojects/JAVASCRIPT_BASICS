@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <!--google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    <!-- font awesome-->
+    
+    <style>
+    button {
+    margin-top: 300px;
+    margin-left: 600px;
+}
+</style>
+
+    </head>
+<body>
+    <div class="container">
+        <div class="row max-height align-items-center text-center">
+            <div class="col">
+                <button class="btn btn-outline-secondary">Click Me!</button>
+            </div> 
+
+        </div>
+               
+    </div>
+    <script>
+    const button = document.querySelector('button')
+    const body = document.querySelector('body')
+    const colors = ['pink', 'green', 'blue', 'grey', 'white', 'black']
+
+    body.style.backgroundColor = 'pink'
+    button.addEventListener('click', changeBackground)
+
+    function changeBackground(){
+    const colorIndex= parseInt(Math.random()*colors.length)
+    body.style.backgroundColor = colors[colorIndex]
+    }
+</script>
+  
+</body>
+</html>
